@@ -318,4 +318,3 @@ autocmd FileType go nmap <leader>r  <Plug>(go-run)
 " =====================================
 silent call Dark()
 autocmd VimEnter * wincmd p
-"autocmd VimEnter * call StartUp()
