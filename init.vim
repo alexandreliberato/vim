@@ -92,8 +92,14 @@ inoremap <Down>  <NOP>
 inoremap <Left>  <NOP>
 inoremap <Right> <NOP>
 inoremap ;; <ESC>
+
 " change the leader key from "\" to ";" ("," is also popular)
 let mapleader=";"
+
+" navigate between errors
+map <C-n> :cnext<CR>
+map <C-m> :cprevious<CR>
+nnoremap <leader>a :cclose<CR>
 
 " Shortcut to edit THIS configuration file: (e)dit (c)onfiguration
 nnoremap <silent> <leader>ec :e $MYVIMRC<CR>
