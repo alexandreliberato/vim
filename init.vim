@@ -274,7 +274,7 @@ let g:go_highlight_methods = 1
 let g:go_highlight_fields = 1
 let g:go_highlight_types = 1
 let g:go_highlight_operators = 1
-let g:go_highlight_build_constraints = 1
+let gkgo_highlight_build_constraints = 1
 
 let g:airline_theme='monochrome'
 
@@ -308,6 +308,10 @@ function! ToggleHiddenAll()
 endfunction
 
 nnoremap <silent> <leader>h :call ToggleHiddenAll()<CR>
+
+" automations for GO
+autocmd FileType go nmap <leader>b  <Plug>(go-build)
+autocmd FileType go nmap <leader>r  <Plug>(go-run)
 
 " =====================================
 " Init
